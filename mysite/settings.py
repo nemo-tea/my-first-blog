@@ -75,12 +75,28 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'sql_server.pyodbc',
+#        'NAME': 'django_girls',
+#        'USER': 'sa',
+#        'PASSWORD': 'kP8pq9pS',
+#        'HOST': 'localhost\SQLEXPRESS',
+#        'PORT': '',
+#
+#        'OPTIONS': {
+#            'driver': 'ODBC Driver 13 for SQL Server',
+#        },
+#    },
+#}
 
 
 # Password validation
